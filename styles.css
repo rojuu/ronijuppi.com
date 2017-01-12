@@ -1,47 +1,41 @@
+:root{
+    --bg-color:#b6c9ed;
+}
+
 body {
-    background: #eff3fc;
+    background: var(--bg-color);
 }
 
-#header-profile {
-    background: #e8edfc;
+#main-content {
+    background: #fff;
+    margin-top: 100px;
+    border-radius: 3px;
 }
 
-#header-profile h1 {
-    font-size: 44px;
+#header {
+    text-align: center;
+    padding-top: 10px;
 }
 
-#header-profile p {
-    font-size: 26px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+#header h1 {
+    font-size: 36px;
+    padding-top: -40px;
+    margin-top: -40px;
 }
 
-#header-profile a {
-    font-size: 28px;
-    padding: 7px 5px 0px 0px;
-    margin: 0px 0px;
-    text-decoration: none;
+#header p {
+    font-size: 20px;
+    padding-bottom: 15px;
 }
 
-#header-profile a:link {
-    color: #333;
-}
-
-#header-profile a:visited {
-    color: #444;
-}
-
-#header-profile a:hover {
-    color: #555;
-}
-
-#header-profile a:active {
-    color: #666;
-}
-
-.profile {
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+#header img {
+    display: inline-block;
+    position: relative;
+    left: 0%;
+    transform: translate(0px, -75px);
+    top: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--bg-color);
 }
