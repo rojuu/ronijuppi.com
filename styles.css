@@ -42,6 +42,30 @@ body {
     border: 4px solid var(--bg-color);
 }
 
+#header a {
+    text-decoration: none;
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transform: translate(0px, -30px);
+}
+
+#header a:link {
+    color: #333;
+}
+
+#header a:visited {
+    color: #333;
+}
+
+#header a:hover {
+    color: #444;
+}
+
+#header a:active {
+    color: #555;
+}
+
 #game-info-title {
     margin-bottom: -60px;
 }
