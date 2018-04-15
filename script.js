@@ -63,8 +63,8 @@ function smoothScrollInit(scrollSpeed) {
                 // Only prevent default if animation is actually gonna happen
                 event.preventDefault();
                 $("html, body").animate({
-                    // Checking offset top because of jumbotron's margin
-                    scrollTop: target.offset().top <= 100 ? 0 : target.offset().top
+                    // Checking offset top because of margins and navbar
+                    scrollTop: target.offset().top <= 10 ? 0 : target.offset().top - 80
                 },
                 {
                 duration: scrollSpeed,
