@@ -30,18 +30,11 @@ h3 {
 a {
     text-decoration: none;
     color: #4474ce;
-    /*
-    font-weight: bold;
-    color:#888;
-    */
 }
 
 a:hover {
     text-decoration: underline;
     color: #509ae0;
-    /*
-    color: #AAA;
-    */
 }
 
 .section {
