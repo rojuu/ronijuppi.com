@@ -4,6 +4,8 @@ html {
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.10em;
+    line-height: 28px;
 }
 
 hr {
@@ -28,11 +30,26 @@ h3 {
 a {
     text-decoration: none;
     color: #4474ce;
+    /*
+    font-weight: bold;
+    color:#888;
+    */
 }
 
 a:hover {
     text-decoration: underline;
     color: #509ae0;
+    /*
+    color: #AAA;
+    */
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.project {
+    margin-bottom: 40px;
 }
 
 .wrapper {
@@ -41,13 +58,12 @@ a:hover {
 }
 
 .content {
-    letter-spacing: 0.11em;
-    line-height: 28px;
     margin-bottom: 24px;
 }
 
 .header {
-    margin-bottom: 32px;
+    width:100%;
+    margin-bottom: 60px;
 }
 
 .header h1 {
@@ -79,29 +95,43 @@ a:hover {
     color: #444;
 }
 
-.navbar ul {
+#navbar {
+    position: absolute;
+    width: 100%;
+    max-width: 800px;
+    height: 30px;
+    background:#FFF;
+    margin-top:0px;
+    padding-top:5px;
+}
+
+#navbar ul {
+    background: #FFF;
     list-style-type: none;
     margin: 0;      
     padding: 0;
+    padding-bottom: 4px;
     overflow: hidden;
 }
 
-.navbar li {
+#navbar li {
     float: left;
 }
 
-.navbar li a {
+#navbar li a {
     display: block;
     text-align: center;
     padding-right: 16px;
     text-decoration: none;
+    font-weight: normal;
     color: black;
 }
 
-.navbar li a:hover {
+#navbar li a:hover {
     color: #888;
 }
 
 .content {
+    padding: 5px;
     margin-top: 14px;
 }

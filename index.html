@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>About | Roni Juppi</title>
+    <title>Roni Juppi</title>
     
     <link rel="stylesheet" href="https://use.fontawesome.com/0232545d41.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="#">
   </head>
 
-  <body>
+  <body id="about">
     <div class="wrapper">
       <div class="header">
         <h1>Roni Juppi</h1>
@@ -25,46 +25,79 @@
         </div>
 
         <h2>Programmer</h2>
-        <hr>
 
-        <div class="navbar">
+        <div id="navbar">
+          <hr>
           <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>  
 
       <div class="content">
-        <h1>Hi!</h1>
-        <p>
-          I'm a game programmer who is passionate about learning everything I can about game programming. I like trying to understand everything that goes on under the hood even when using ready made engines like Unity or Unreal. I still have a long way to go, but I am enjoying the process every step of the way. I believe in writing code with good performance whenever possible. I try to follow <a href"#">data-oriented</a> programming principles in my own and any work projects I do.
-        </p>
+        <div class="section">
+            <h1>Hi!</h1>
+            <p>
+              I'm a game programmer who is passionate about learning everything I can about game programming. I like trying to understand everything that goes on under the hood, even when using ready made engines like Unity or Unreal. I still have a long way to go, but I am enjoying the process every step of the way. I believe in writing code with good performance whenever possible, as providing the best experience for my users is a priority for me. I try to follow data-oriented programming principles in any projects I am a part of. If you are interested in anything I do: <a href="#">contact</a> me.
+            </p>
+        </div>
 
-        <h2>Projects</h2>
-        <p>
-          Here is a list of some game jam games I've been a part of making in no particular order:
+        <div class="section">
+          <h1 id="projects">Projects</h1>
           <p>
-            <h3><a href="http://globalgamejam.org/2017/games/sonar-bat">Sonar Bat (GGJ17)</a></h3>
-            Sonar Bat was our Global Game Jam 2017 entry. It's a flappy bird like game with a little twist. You can only see when you tap the screen. Bats are blind after all. It is available for download on Google Play.
+            <div style="margin-bottom: -15px">Here is a list of some projects I've been a part of in no particular order:</div>
+            <p class="project">
+              <h2>The Land of the Scurvy Dog</h1>
+              <a href="https://teambitingmascot.itch.io/corgipirate">A 3D platformer demo</a> made with Unreal Engine 4. You play as a pirate corgi. The game focuses on smooth controls and challenging platforming. A full version of the game is currently <a href="http://bitingmascot.com">in development</a>.
+              <br>What I did in this project:
+              <ul>
+                <li>Gameplay code (Controls, camera stuff, ...)</li>
+                <li>Game flow and systems (checkpoints, score counting, lose states, ...)</li>
+                <li>Polish stuff (effects, feedback, ...)</li>
+                <li>All sorts of other coding and tech stuff</li>
+              </ul>
+            </p>
+            <p class="project">
+                <h2>Gravity Creatures</h2>
+                <a href="https://play.google.com/store/apps/details?id=com.kajakgames.gravitycreatures">A gravity based mobile puzzle game</a> with 40 levels divided into 4 biomes, each biome introducing a new gimmick. The game was made with Unity for Android during the summer of 2016.
+                <br>What I did in this project:
+                <ul>
+                  <li>Most of the UI code</li>
+                  <li>Content loading and management</li>
+                  <li>Gameplay code and polish stuff</li>
+                </ul>
+            </p>
+            <p class="project">
+              <h2>Sonar Bat (GGJ17)</h2>
+              <a href="http://globalgamejam.org/2017/games/sonar-bat">Sonar Bat</a> was our Global Game Jam 2017 entry. It's a flappy bird like game with a little twist. You can only see when you tap the screen. Bats are blind after all. It is available for download on Google Play.
+            </p>
+            <p class="project">
+              <h2>Insult to Injury</h2>
+              <a href="https://play.google.com/store/apps/details?id=com.kajakgames.insulttoinjury">A game</a> about coming up with the best insults. The goal of the game is to insult your opponent in the worst ways. The game features online and local multiplayer. You can also take a shot at beating the AI opponent. The game was made with Unity for Android during the spring of 2016.
+              <br>What I did in this project:
+              <ul>
+                <li>Implementing online features (match-making, cloud save, ...)</li>
+                <li>Content loading and management (word packs, hats)</li>
+                <li>Gameplay implementation</li>
+                <li>Bunch of little polish</li>
+              </ul>
+            </p>
           </p>
-          <p>
-            <h3><a href="https://github.com/rojuu/LinnaPeli/releases">Kajaani Castle Jam game</a></h3>
-            Another jam entry about protecting the precious Kajaani castle from evil Russian attackers.
-          </p>
-          <p>
-            <h3><a href="http://globalgamejam.org/2016/games/battru-shamanusu">Battru Shamanusu (GGJ16)</a></h3>
-            Global Game Jam 2016 entry.
-          </p>
-        </p>
+        </div>
 
-        <h2>Contact</h2>
-        <p>
-          Feel free to contact me on social media or by email at <a href="mailto:roni.juppi@gmail.com">roni.juppi@gmail.com</a>.
-        </p>
+        <div class="section">
+          <h1 id="contact">Contact</h1>
+          <p>
+            Feel free to contact me on social media or by email at <a href="mailto:roni.juppi@gmail.com">roni.juppi@gmail.com</a>.
+          </p>
+        </div>
       </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 
