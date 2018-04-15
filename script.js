@@ -1,37 +1,41 @@
+var top_amount_px = 100;
+var offset = -1;
+var scrollSpeed = 300;
+
 $(document).ready(function() {
-    smoothScrollInit(300);
-    keepAtTop('navbar', 100, -1);
+    smoothScrollInit();
+    keepAtTop();
 });
 
-function keepAtTop(elementId, amount, offset) {
-    function getScrollTop() {
-        if (typeof window.pageYOffset !== 'undefined' ) {
-          // Most browsers
-          return window.pageYOffset;
-        }
-
-        var d = document.documentElement;
-        if (d.clientHeight) {
-          // IE in standards mode
-          return d.scrollTop;
-        }
-
-        // IE in quirks mode
-        return document.body.scrollTop;
+function getScrollTop() {
+    if (typeof window.pageYOffset !== 'undefined' ) {
+      // Most browsers
+      return window.pageYOffset;
     }
 
-    function updatePos() {
-        var element = document.getElementById(elementId),
-        scroll = getScrollTop();
+    var d = document.documentElement;
+    if (d.clientHeight) {
+      // IE in standards mode
+      return d.scrollTop;
+    }
 
-        if (scroll <= amount - offset) {
-          element.style.top = amount+"px";
-        }
-        else {
-          element.style.top = (scroll+offset)+"px";
-        }
-    };
+    // IE in quirks mode
+    return document.body.scrollTop;
+}
 
+function updatePos() {
+    var element = document.getElementById('navbar'),
+    scroll = getScrollTop();
+
+    if (scroll <= top_amount_px - offset) {
+      element.style.top = top_amount_px+"px";
+    }
+    else {
+      element.style.top = (scroll+offset)+"px";
+    }
+};
+
+function keepAtTop() {
     updatePos();
     window.onscroll = updatePos;
 }
@@ -64,6 +68,7 @@ function smoothScrollInit(scrollSpeed) {
                 },
                 {
                 duration: scrollSpeed,
+                progress: updatePos,
                 queue: false
                 },
                 function() {
