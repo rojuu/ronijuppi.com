@@ -1,4 +1,4 @@
-var top_amount_px = 100;
+var top_amount_px = 60;
 var offset = -1;
 var scrollSpeed = 300;
 
